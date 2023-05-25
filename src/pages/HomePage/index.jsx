@@ -2,7 +2,11 @@ import React from 'react'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div>
+      <a>
+        <img src="gokuvssuperman.png" className="logo" alt="Goku vs Superman" />
+      </a>
+    </div>
   )
 }
 

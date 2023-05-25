@@ -17,7 +17,7 @@ function App() {
           
         </Route>
       </Routes>
-      <h1>Superhero Clash</h1>
+      <footer>Superhero Clash</footer>
     </>
   )
 }

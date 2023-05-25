@@ -40,6 +40,8 @@ const Trumps = () => {
   }
 
     async function compareInt(){
+      console.log(playerSuperhero.powerstats.intelligence)
+      console.log(cpuSuperhero.powerstats.intelligence)
       if (playerSuperhero.powerstats.intelligence > cpuSuperhero.powerstats.intelligence){
         setWinner("You!")
       } else {
@@ -86,8 +88,8 @@ const Trumps = () => {
             {
               playerLoading
               ? <p>Loading...</p>
-              : <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={playerSuperhero.image.url} />
+              : <Card className='playerCard' style={{ width: '18rem' }}>
+                <Card.Img className='card-image' variant="top" src={playerSuperhero.image.url} />
 
               <Card.Body>
                   <Card.Title>{playerSuperhero.name}</Card.Title>
@@ -106,10 +108,19 @@ const Trumps = () => {
             {
               cpuLoading
               ? <p>Loading...</p>
-              : <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src={cpuSuperhero.image.url} />
-              <Card.Title>{playerSuperhero.name}</Card.Title>
-  
+              : <Card className='cpuCard' style={{ width: '18rem' }}>
+              <Card.Body>
+              <Card.Img className='card-image' variant="top" src={cpuSuperhero.image.url} />
+              <Card.Title>{cpuSuperhero.name}</Card.Title>
+              </Card.Body>
+              <ListGroup className="list-group-flush">
+                  <ListGroup.Item>Intelligence: ???</ListGroup.Item>
+                  <ListGroup.Item >Strength: ???</ListGroup.Item>
+                  <ListGroup.Item >Speed: ???</ListGroup.Item>
+                  <ListGroup.Item >Durability: ???</ListGroup.Item>
+                  <ListGroup.Item >Combat: ???</ListGroup.Item>
+              </ListGroup>
+
             </Card>
             }
             <h3>Winner is {winner}</h3>
