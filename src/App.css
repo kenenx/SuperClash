@@ -56,3 +56,20 @@ body {
 footer {
   float: bottom;
 }
+
+.vs {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  width: auto;
+  align-items: center;
+  height: 10vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.winner {
+  vertical-align: bottom;
+}
