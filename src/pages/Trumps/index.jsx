@@ -7,7 +7,7 @@ const Trumps = () => {
   const [cpuSuperhero, setCpuSuperhero] = useState("");
   const [playerLoading, setPlayerLoading] = useState(true)
   const [cpuLoading, setCpuLoading] = useState(true);
-  const [winner, setWinner] = useState("")
+  const [winner, setWinner] = useState("...")
 
   const Pid = Math.floor(Math.random() * 731) + 1
   const Cid = Math.floor(Math.random() * 731) + 1
@@ -84,7 +84,6 @@ const Trumps = () => {
 
     return (
         <>
-            <div>Trumps Card</div>
             {
               playerLoading
               ? <p>Loading...</p>
@@ -104,7 +103,7 @@ const Trumps = () => {
               </ListGroup>
           </Card>
             }
-            <h2>Vs</h2>
+            <img src="vs.png" className='vs' alt="VS graphic" />
             {
               cpuLoading
               ? <p>Loading...</p>
@@ -123,7 +122,7 @@ const Trumps = () => {
 
             </Card>
             }
-            <h3>Winner is {winner}</h3>
+            <h3 className='winner'>Winner is {winner}</h3>
         </>
     )
 }
