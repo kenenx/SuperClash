@@ -1,6 +1,8 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom';
 import './App.css'
+import { HomePage, ViewAll, Trumps } from './pages'
+import { NavBar } from './components'
 
 import Trumps from './pages/Trumps'
 
@@ -8,8 +10,6 @@ function App() {
 
   return (
     <>
-      <h1>Superhero Clash</h1>
-
       <Trumps />
 
       {/* <Routes>
@@ -19,7 +19,6 @@ function App() {
           <Route path="/play" element={<Trumps />} />
         </Route>
       </Routes> */}
-
     </>
   )
 }
