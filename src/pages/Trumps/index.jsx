@@ -14,7 +14,6 @@ const Trumps = () => {
         try {
             const response = await fetch('https://superheroapi.com/api.php/10161034412029859/289')
             const data = await response.json()
-            console.log(data)
             setSuperhero(data)
             setLoading(false)
             // console.log(superhero.image.url)
@@ -22,6 +21,8 @@ const Trumps = () => {
             console.log('error message:', error);
         }
     }
+
+
 
 
 
