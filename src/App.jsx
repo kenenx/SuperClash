@@ -12,12 +12,12 @@ function App() {
         <Route path="/" element={<NavBar/>}>
           <Route index element={<HomePage />} />
 
-          <Route path="/superheros" element={<ViewAll />} />
+          {/* <Route path="/superheros" element={<ViewAll />} /> */}
           <Route path="/play" element={<Trumps />} />
           
         </Route>
       </Routes>
-      <footer>Superhero Clash</footer>
+      <footer>SuperClash</footer>
     </>
   )
 }
